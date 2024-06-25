@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWebSite</title>
+    <style>
+
+      *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+        body {
+            font-family: Helvetica, Arial, sans-serif; 
+        }
+        .navbar{
+            background-color: #373A40;
+            width: auto;
+            height: 60px;
+            padding: 15px;
+        }
+        .nav-link{
+            color: azure;
+            margin: 5px;
+            text-decoration: none;
+        }
+        .container{
+            background-color: #EEEEEE;
+            height: 300px;
+            width: auto;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        
+        p{
+           
+            padding: 10px;
+            margin: 10px auto;
+            
+        }
+        #foto{
+            width: 150px;
+            border-radius: 100px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+           
+        }
+        .social-link img {
+            width: 20px;
+            height: auto; 
+            margin: 5px;
+            align-items: center;
+        }
+        .about{
+            padding: 25px;
+            height: 200px;
+            width: auto;
+            padding: 20px;
+            background-color: #a2a9b8;
+        }
+        ul{
+            padding: 15px;
+            list-style: none;
+            
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+        }
+        .background{
+           justify-content: left;
+        }
+       
+        
+
+    </style>
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navContainer">
+            <table>
+                <tr>
+                    <td class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </td>
+                    <td class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4>Welcome to My Website</h4>
+        <p>Hello, I'm Burak Gonca, a web developer. Passionate about creating awesome websites.</p>
+        <div>
+            <img id="foto" src="../images/1.jpeg" alt="">
+        
+            <div class="social-links">
+                <a class="social-link" href="#">
+                    <img src="../images/twitter.png" >
+                </a>
+                <a class="social-link" href="#">
+                    <img src="../images/instagram.png" >
+                </a>
+                <a class="social-link" href="#">
+                    <img src="../images/linkedin.png" >
+                </a>
+                <a class="social-link" href="#">
+                    <img src="../images/github.png" >
+                </a>
+                <a class="social-link" href="#">
+                    <img src="../images/facebook.png" style="height: 20px; width: auto;" >
+                </a>
+                <a class="social-link" href="#">
+                    <img src="../images/youtube.png" >
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="about">
+        <h4>About Me</h4>
+        <div class="about-content">
+            <ul>
+                <div class="background">
+                    <li><h4>Background</h4></li>
+                    <p>I have been working in the web development industry for over 2 years. During this time, I have gained extensive experience in Full Stack Development and responsive web design</p>
+                </div>
+             
+
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

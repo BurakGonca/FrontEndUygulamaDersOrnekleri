@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="selectors-ex.css">
+    <title>Selectors-ex</title>
+
+    <style>
+       
+       .paragraph{
+        color:black
+       }
+        #third{
+            color:blue
+        }
+        #mor{
+            background-color: rgb(124, 49, 209);
+            color: black;
+        }
+        .liste1{
+            background-color: aqua;
+        }
+        h2{
+            color: rgb(41, 72, 243);
+        }
+        p{
+            color:palevioletred
+        }
+        #sonParagraf{
+            background-color: dodgerblue;
+        }
+        #listBir{
+            background-color: palevioletred;
+        }
+        #listIki{
+            background-color: gray;
+        }
+        a{
+            background-color: black;
+            color:aliceblue
+        }
+
+    </style>
+
+
+  </head>
+  <body>
+    <p id="one">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae maxime cum
+      id quo, quisquam nemo fuga hic alias vel numquam dignissimos quasi
+      praesentium maiores est? Nemo sunt voluptates quas ut?
+    </p>
+    <p class="paragraph">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, numquam!
+      Aut aliquam ipsam eius, enim assumenda sequi recusandae officia ratione
+      error numquam velit, illum cumque ad! Perspiciatis, doloremque. Ratione,
+      quisquam?
+    </p>
+    <p class="paragraph" id="third">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum deserunt,
+      nulla eveniet voluptate distinctio dolor nesciunt debitis nemo amet, culpa
+      non tempora dignissimos. Voluptate, debitis omnis. Iste eaque reiciendis
+      nulla?
+    </p>
+    <main>
+      <h2 id="mor">Direct Child</h2>
+      <ul class="liste1">
+        <li>Lorem.</li>
+        <li>Lorem.</li>
+        <li>Lorem.</li>
+        <li><a href="#">Link koyduk</a></li>
+      </ul>
+      <section>
+        <h2>Not Direct Child</h2>
+        <h2>Not Direct Child</h2>
+        <h2>Not Direct Child</h2>
+        <a href="wwww.google.com">Link Test</a>
+
+      </section>
+      <section>
+        <ol>
+          <li id="listBir">Lorem.</li>
+          <li id="listIki">Lorem, ipsum.</li>
+          <li id="listBir">Lorem, ipsum dolor.</li>
+          <li id="listIki">Lorem ipsum dolor sit.</li>
+        </ol>
+      </section>
+      <section class="last">
+        <h3>Lorem, ipsum.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          eligendi at neque veniam nisi, ad explicabo facere animi voluptate
+          laboriosam id in fugit quas laborum consequuntur atque suscipit
+          dignissimos molestiae.
+        </p>
+        <p id="sonParagraf">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          eligendi at neque veniam nisi, ad explicabo facere animi voluptate
+          laboriosam id in fugit quas laborum consequuntur atque suscipit
+          dignissimos molestiae.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
