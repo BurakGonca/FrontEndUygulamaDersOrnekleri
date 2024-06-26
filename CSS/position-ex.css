@@ -1,0 +1,70 @@
+.wrapper {
+  
+  width: 800px;
+  height: 800px;
+  border: 1px solid black; 
+}
+
+.container{
+  margin-left: 20px;
+  width: 250px;
+  height: 250px;
+  border: 1px solid green;
+  background-color: papayawhip;
+  
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  
+  border: 1px solid black; 
+}
+
+
+#box-1 {
+  position: relative;
+  background-color: palevioletred;
+  top: 40px;
+  left:240px;
+  z-index: -1;
+}
+
+
+#box-2 {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  background-color:aquamarine;
+}
+
+
+#box-3 {
+  position: absolute;
+  top: 150px;
+  left: 80px;
+  background-color:yellow;
+}
+
+
+#box-4 {
+  position: fixed;
+  top: 10px;
+  left: 29px;
+  background-color: rgb(6, 80, 241);
+}
+
+
+#box-5 {
+  
+  position: sticky;
+  left: 180px;
+  top: 10px;
+  background-color: green;
+}
+
+
+
+
+
