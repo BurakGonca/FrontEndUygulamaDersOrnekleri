@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Restaurant</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #071952;
+        padding: 15px;
+      }
+
+      .navbar-logo {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+      }
+
+      .navbar-logo img {
+        margin-right: 10px;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .navbar-item {
+        margin-left: 20px;
+      }
+
+      .navbar-link {
+        color: white;
+        text-decoration: none;
+      }
+
+
+
+
+
+      .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .menu-item {
+        margin: 20px;
+        border-radius: 10px;
+        background-color: #ebf4f6;
+        text-align: justify;
+        padding: 10px;
+        flex-basis: 200px;
+      }
+
+      .menu-item img {
+        width: 100%;
+        border-radius: 10px;
+        padding-bottom: 10px;
+      }
+
+      .menu-item h2 {
+        padding-bottom: 10px;
+      }
+
+      #name-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <h1>
+            <a class="navbar-logo" href="#">
+              <img src="../images/pngegg.png" alt="logo" width="35px" /> My
+              Restaurant
+            </a>
+          </h1>
+          <ul class="navbar">
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Home</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Menu</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Reservation</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">About Us</a>
+            </li>
+            <li class="navbar-item">
+              <a class="navbar-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <div class="menu">
+        <div class="menu-item">
+          <img
+            src="https://nationaltoday.com/wp-content/uploads/2019/07/national-junk-food-day-300x300.jpg"
+            alt="Menu Item"
+          />
+          <div id="name-price">
+            <h2>Burger Menu</h2>
+            <p>26$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://simply-delicious-food.com/wp-content/uploads/2020/08/Bourbon-basted-cheeseburger-2-300x300.jpg" alt="Burger" />
+          <div id="name-price">
+            <h2>Burger</h2>
+            <p>15$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://www.maricruzavalos.com/wp-content/uploads/2022/03/huaraches-food-recipe-300x300.jpg" alt="Taco" />
+          <div id="name-price">
+            <h2>Taco</h2>
+            <p>12.5$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://plantationcateringnewport.com/wp-content/uploads/2018/05/ca4.jpg" alt="Sandwich" />
+          <div id="name-price">
+            <h2>Sanwich</h2>
+            <p>10$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8flrE3zynR5J3EJU1lyDEDqCtiQkFJCP03w&usqp=CAU" alt="Burger" />
+          <div id="name-price">
+            <h2>Burger</h2>
+            <p>14$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="../images/steak.png" alt="Steak Bowl" />
+          <div id="name-price">
+            <h2>Steak Bowl</h2>
+            <p>25$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtwA34FJwTEMQ-hCu7X9x6QtiyMdRVkPv92Q&usqp=CAU" alt="Pasta" />
+          <div id="name-price">
+            <h2>Pasta</h2>
+            <p>12$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://assets.dierbergs.com/proddierbergsstorage/media/June-2023-Product-Images-300x300-Loaded-Burger-1.jpg" alt="Meetball" />
+          <div id="name-price">
+            <h2>Meetball</h2>
+            <p>14$</p>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+            quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+            repellat nesciunt.
+          </p>
+        </div>
+        <div class="menu-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO5tyHKnWo0NKpmRXZ9LOvRnZAVxFw4NMCDQ&usqp=CAU" alt="Noodle" />
+            <div id="name-price">
+              <h2>Noodle</h2>
+              <p>13$</p>
+            </div>
+  
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+              repellat nesciunt.
+            </p>
+          </div>
+          <div class="menu-item">
+            <img src="https://plantyou.com/wp-content/uploads/2023/01/DSC03694-300x300.jpg" alt="Chickpea" />
+            <div id="name-price">
+              <h2>Chickpea</h2>
+              <p>9$</p>
+            </div>
+  
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+              quia quam. Ut, perferendis et? Laudantium perspiciatis eius unde
+              repellat nesciunt.
+            </p>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
