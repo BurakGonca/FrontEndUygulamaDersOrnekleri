@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("../images/arkaplan.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.bosluk{
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../images/arkaplan.jpg") no-repeat center center fixed;
+    padding: 15px;
+  
+   
+  }
+
+  .nav-container{
+    margin-top: 40px;
+   
+  }
+
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+    
+    text-decoration: none;
+  }
+
+  .navbar-logo img {
+    margin-right: 10px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+
+  .navbar-item {
+    margin-left: 20px;
+  }
+
+  .navbar-link {
+    color: rgb(77, 60, 141);
+    text-decoration: none;
+    font-size:x-large;
+  }
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0;
+ 
+}
+
+
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+ 
+}
+
+.search-box-shadow {
+  width: 60%;
+  height: 10px;
+  background: white;
+  border-radius: 10px;
+  margin-top: -10px; 
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.search-button {
+  font-size: 15px;
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(44, 174, 124);
+  color: white;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: rgb(77, 60, 141);
+}
+
+
