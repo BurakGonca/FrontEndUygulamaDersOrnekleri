@@ -252,7 +252,7 @@
 
 
 
-console.clear();
+
 
 
 
@@ -347,4 +347,11 @@ console.log(myArray.indexOf("ananas"));
 
 // 13- newArray dizisinin ilk 3 elemanını bir değişkene atayın, konsola yazdırın.
 let newArray2 = myArray.slice(0,3);
+console.log(newArray2);
+
+
+// 14- son oluşturduğunuz 3 elemanlı dizinin 2. elemanını silip yerine 2 farklı eleman ekleyin.
+
+newArray2.splice(1,1,"Furkan","Kerem");
+
 console.log(newArray2);
