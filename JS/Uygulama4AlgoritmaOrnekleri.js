@@ -387,3 +387,205 @@ console.log(control);
 let siralama = dizi2.sort(element => element)
 
 console.log(siralama);
+
+
+
+
+console.clear();
+
+
+
+
+
+
+// 1- myObject isimli boş bir nesne oluşturun.
+
+let myObject = {};
+
+// 2- nesnenin içerisine isim, yas, cinsiyet ve meslek özelliklerini sırasıyla ekleyin
+
+myObject.isim = "Burak";
+myObject.yas = 34;
+myObject.cinsiyet = "Erkek";
+myObject.meslek = "Software Developer";
+
+console.log(myObject);
+
+
+
+// 3- nesnenin içerisinden cinsiyet özelliğini kaldırın.
+
+delete myObject.cinsiyet;
+
+console.log(myObject);
+
+// 4- myObject nesnesinin özelliklerini bir başka değişkene kopyalayın.
+
+let yeniOzellikli = {...myObject};
+
+console.log(yeniOzellikli);
+
+
+// 5- nesnenizin anahtarlarını konsola yazdırın.
+
+console.log(Object.keys(myObject));
+
+// 6- nesnenizin değerlerini konsola yazdırın.
+
+console.log(Object.values(myObject));
+
+// 7- nesnenizin tüm anahtar-değer çiftlerini konsola yazdırın.
+
+console.log(myObject);
+
+// 8- nesnenizin içerisinde isim anahtarına sahip bir özellik var mı diye kontrol edin.
+
+// console.log(Object.("isim"));  
+
+
+// 9- nesnenizin özelliklerine değişiklik ve ekleme çıkarma yapılabilmesini engelleyin.
+
+
+// Object.freeze(myObject);
+
+
+myObject.isim ="burki";
+
+console.log(myObject);
+
+// 10- nesnenizin özelliklerinde değişiklik yapılabilsin ancak ekleme çıkarma yapılabilmesini engelleyin.
+
+
+Object.seal(myObject);
+
+myObject.isim="Burki";
+myObject.tel="05063469071";
+delete myObject.meslek;
+
+console.log(myObject);
+
+
+// console.clear();
+
+
+
+
+const aracBilgileri = {
+  id: "audiA6_123",
+  model: "audiA6",
+  yil: 2019,
+  renk: "kırmızı",
+  servisKayitlari: [
+    {
+      id: "audiA6_123_1",
+      tarih: "05.01.2020",
+      km: 2500,
+      ucret: 3000,
+      detay: [
+        {
+          id: "audiA6_123_1_1",
+          aciklama: "balata değişimi",
+          ucret: 1700,
+        },
+        {
+          id: "audiA6_123_1_2",
+          aciklama: "yağ değişimi",
+          ucret: 700,
+        },
+        {
+          id: "audiA6_123_1_3",
+          aciklama: "boya koruma",
+          ucret: 600,
+        },
+      ],
+    },
+    {
+      id: "audiA6_123_2",
+      tarih: "25.06.2021",
+      km: 10500,
+      ucret: 5000,
+      detay: [
+        {
+          id: "audiA6_123_2_1",
+          aciklama: "balata değişimi",
+          ucret: 2700,
+        },
+        {
+          id: "audiA6_123_2_2",
+          aciklama: "yağ değişimi",
+          ucret: 1700,
+        },
+        {
+          id: "audiA6_123_2_3",
+          aciklama: "boya koruma",
+          ucret: 600,
+        },
+      ],
+    },
+    {
+      id: "audiA6_123_3",
+      tarih: "28.08.2022",
+      km: 25400,
+      ucret: 10000,
+      detay: [
+        {
+          id: "audiA6_123_3_1",
+          aciklama: "balata değişimi",
+          ucret: 3500,
+        },
+        {
+          id: "audiA6_123_3_2",
+          aciklama: "yağ değişimi",
+          ucret: 2000,
+        },
+        {
+          id: "audiA6_123_3_3",
+          aciklama: "seramik kaplama",
+          ucret: 4500,
+        },
+      ],
+    },
+  ],
+};
+
+// student isimli bir nesne oluşturun ve içerisine 3 adet özellik ekleyin. Nesnenin özelliklerini `for...in` döngüsüyle dolaşan ve konsola yazdıran bir fonksiyon yazın.
+
+const student = {
+  no: 1,
+  cinsiyet: "erkek",
+  bolum: "istatistik"
+}
+
+let cikti = "";
+let x;
+for (x in student) {
+ console.log(student[x]);
+}
+
+
+
+// İçerisinde 3 adet öğrenci nesnesi bulunan bir dizi oluşturun. her nesnenin kendisine ait isim ve not özellikleri bulunsun.(örn. {name: "Cem", grades: [80, 90, 50]}) Öğrencilerin ortalama notlarını `for...of` döngüsü kullanarak hesaplayın ve dersten geçip geçmedikleri bilgisini isimleriyle birlikte konsola yazdırın. (Geçer not 60)
+
+
+const students = [
+  {name: "Burak", grades: [80, 30, 50]},
+  {name: "Hakan", grades: [60, 75, 56]},
+  {name: "Kerem", grades: [85, 72, 60]}
+];
+
+for (let student of students) {
+  let sum = 0;
+  for (let grade of student.grades) {
+    sum = sum + grade;
+  }
+  let ortalama = sum / 3;
+  
+  console.log(`${student.name}'in ortalaması: ${ortalama}`);
+  
+  if (ortalama > 60) {
+    console.log(`${student.name} dersten geçti`);
+  } else {
+    console.log(`${student.name} dersten kaldı.`);
+  }
+}
+
