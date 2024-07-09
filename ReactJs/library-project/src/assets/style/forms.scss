@@ -1,0 +1,35 @@
+form{
+    background-color: #3C5B6F;
+    width: 350px;
+    padding: 15px;
+    margin: 30px auto;
+    border-radius: 20px;
+    text-align: center;
+    input,select,textarea{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: 1px solid lightgray;
+    }
+    textarea{
+        height: 150px;
+        
+    }
+    input[type="submit"]{
+
+        width: 40%;
+        position: relative;
+        left:190px;
+        padding: 10px;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            background-color:#948979 ;
+            color: #948979;
+        }
+
+    }
+
+}

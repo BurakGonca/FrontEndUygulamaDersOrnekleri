@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+::placeholder{
+    font-family: monospace;
+    font-size: 12px;
+}
+select option{
+    font-family: monospace;
+}

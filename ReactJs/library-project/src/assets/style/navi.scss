@@ -1,0 +1,39 @@
+nav{
+    background-color:#153448;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    
+    .brand{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        cursor: default;
+        img{
+            width: 90px;
+            
+        }
+    }
+    .liste{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap:20px;
+        li{
+            transition: .2s;
+            cursor: pointer;
+            &:hover{
+                color: #DFD0B8;
+                text-decoration: underline;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+
+
+}
+
+
