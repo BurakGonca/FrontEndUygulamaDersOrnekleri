@@ -1,31 +1,58 @@
-import React from 'react'
-import '../assets/style/card.scss'
+import React from "react";
+import "../assets/style/card.scss";
+import Book from "../assets/img/defaultBook.jpg";
 
-const Card = (props) => {
- 
-  
-
-
+const Card = ({ kitap, kitapSil }) => {
+  let kelimeDizisi = kitap.kitapAciklamasi.split(" ");
 
   return (
-    
-    <div className='card'>
-      <button className='delete'>Sil</button>
-      <button className='edit'>Düzenle</button>
-      <img src={props.kitap.kitapResmi} alt={props.kitap.KitapAdi} />
-      <div className='card-body'>
-        <h4>{props.kitap.kitapAdi}</h4>
-        <p>Yazar: {props.kitap.kitapYazari}</p>
-        <p>Kategori: {props.kitap.kitapKategorisi}</p>
-        <p>Sayfa Sayısı: {props.kitap.kitapSayfaSayisi}</p>
-        <p>Açıklaması:{props.kitap.kitapAciklamasi.substring(0,100)}</p>
+    <div className="card">
+      <button onClick={() => kitapSil(kitap.id)} className="delete">
+        Sil
+      </button>
+      <button className="edit">Düzenle</button>
+      <img
+        src={kitap.kitapResmi ? kitap.kitapResmi : Book}
+        alt={kitap.KitapAdi}
+      />
+      <div className="card-body">
+        <h4>{kitap.kitapAdi}</h4>
+        <p>Yazar: {kitap.kitapYazari}</p>
+        <p>Kategori: {kitap.kitapKategorisi}</p>
+        <p>Sayfa Sayısı: {kitap.kitapSayfaSayisi}</p>
+        {/* <p>Açıklaması:{kitap.kitapAciklamasi.substring(0,100) + "..."}</p> */}
 
+        <p>
+          Açıklaması:
+          {kelimeDizisi[0] +
+            " " +
+            kelimeDizisi[1] +
+            " " +
+            kelimeDizisi[1] +
+            " " +
+            kelimeDizisi[2] +
+            " " +
+            kelimeDizisi[3] +
+            " " +
+            kelimeDizisi[4] +
+            " " +
+            kelimeDizisi[5] +
+            " " +
+            kelimeDizisi[6] +
+            " " +
+            kelimeDizisi[7] +
+            " " +
+            kelimeDizisi[8] +
+            " " +
+            kelimeDizisi[9] +
+            " " +
+            kelimeDizisi[10] +
+            " " +
+            "..."}
+        </p>
       </div>
-
-
     </div>
+  );
+};
 
-  )
-}
-
-export default Card
+export default Card;

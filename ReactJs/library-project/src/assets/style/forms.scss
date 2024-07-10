@@ -5,6 +5,13 @@ form{
     margin: 30px auto;
     border-radius: 20px;
     text-align: center;
+
+    &:hover{
+        color: #DFD0B8;
+        text-decoration: underline;
+        transform: scale(1.03);
+    }
+
     input,select,textarea{
         display: block;
         width: 100%;
@@ -30,6 +37,10 @@ form{
             color: #948979;
         }
 
+    }
+    h3{
+        color: #DFD0B8;
+        font-size: large;
     }
 
 }
