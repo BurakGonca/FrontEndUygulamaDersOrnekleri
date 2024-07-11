@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
-import '../assets/style/forms.scss';
+import React, { useState } from "react";
+import "../assets/style/forms.scss";
 
-const Forms = ({ addRecipe }) => {
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
-  const [imageURL, setImageURL] = useState('');
+const Forms = ({ recipeEkle, recipes }) => {
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [image, setImage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title && description && imageURL) {
-      addRecipe({ title, description, imageURL });
-      setTitle('');
-      setDescription('');
-      setImageURL('');
-    }
+
+    recipeEkle({
+      id: (Number(recipes[recipes.length - 1].id) + 1).toString(),
+      title: title,
+      description: description,
+      image: image,
+    });
+
+    setTitle("");
+    setDescription("");
+    setImage("");
   };
 
   return (
@@ -31,11 +36,15 @@ const Forms = ({ addRecipe }) => {
       />
       <input
         type="text"
-        placeholder="Image URL"
-        value={imageURL}
-        onChange={(e) => setImageURL(e.target.value)}
+        placeholder="Image Url"
+        value={image}
+        onChange={(e) => setImage(e.target.value)}
       />
-      <button type="submit">Add Recipe</button>
+      <input
+        disabled={title === "" || description === ""}
+        type="submit"
+        value="Add Recipe"
+      />
     </form>
   );
 };
