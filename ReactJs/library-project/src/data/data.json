@@ -2,17 +2,17 @@
   "kitaplar": [
     {
       "id": "1",
-      "kitapAdi": "Körlük",
+      "kitapAdi": "Körlük3",
       "kitapYazari": "Jose Saramago",
       "kitapKategorisi": "Roman",
-      "kitapSayfaSayisi": 320,
+      "kitapSayfaSayisi": "350",
       "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:11911357/wh:true/wi:220",
       "kitapAciklamasi": "Usta yazarın belki de en etkileyici yapıtı olan, sinemaya da uyarlanmış Körlük, toplumsal yaşamın nasıl bir vahşete dönüşebileceğini müthiş bir incelikle gözler önüne sererken, insana dair son umut kırıntısını da bir kadının tek başına örgütlediği dayanışma ve direniş örneğiyle sergileyen unutulmaz eserler arasında yerini almıştır."
     },
     {
       "id": "2",
       "kitapAdi": "Yabancı",
-      "kitapYazari": "Stephan King",
+      "kitapYazari": "Stephen King",
       "kitapKategorisi": "Roman",
       "kitapSayfaSayisi": "544",
       "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:8682866/wh:true/wi:220",
@@ -44,32 +44,75 @@
       "kitapSayfaSayisi": 272,
       "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:11599115/wh:true/wi:220",
       "kitapAciklamasi": "“Koca bir kavmin binlerce kilometreyi üç asır içinde geçtiğini düşünün… Bu, dünyayı değiştirmez de ne yapar? İşte Türkler dünyayı böyle değiştirdi. Bu sebeple, bizim hayalî bir tarih ve kahramanlar üretmeye değil, yalnızca doğruyu öğrenmeye ihtiyacımız var…”"
+    },
+    {
+      "id": "6",
+      "kitapAdi": "6dft d dfg df",
+      "kitapYazari": "fgfdgd",
+      "kitapKategorisi": "Tarih",
+      "kitapSayfaSayisi": "5000",
+      "kitapResmi": "",
+      "kitapAciklamasi": "dfgd  gfdgd ",
+      "isDeleted": true
+    },
+    {
+      "id": "7",
+      "kitapAdi": "Siyasi Tarih",
+      "kitapYazari": "Haktan Birsel",
+      "kitapKategorisi": "Tarih",
+      "kitapSayfaSayisi": "168",
+      "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:11499349/wh:true/wi:220",
+      "kitapAciklamasi": "Tarih görecelidir denilse de doğğru bilgiler her zaman doğru sonuçlar verir.Ancak gene de her araştırmacının çalışmaları farklı özelliklere sahiptir. Önemli olan olayları çarpıtmadan ve tarafsızca değerlendirebilmektir. Bu kitapta biz de bunu yapmaya çalıştık. Olayları tarafsızca ortaya koymaya ve değerlendirmeye çalıştık."
+    },
+    {
+      "id": "8",
+      "kitapAdi": "Tarih Boyunca Zaferlerimiz",
+      "kitapYazari": "Burhan Bozgeyik ",
+      "kitapKategorisi": "Tarih",
+      "kitapSayfaSayisi": "224",
+      "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:11217217/wh:true/wi:220",
+      "kitapAciklamasi": "Bizim tarihimiz zaferlerle, fetihlerle doludur. 124 bin Peygamber ve onların yolundan yürüyen pek çok kumandanlar, idareciler, Allah'ın dininin yeryüzünde hâkim olması için mücâdele vermişler, bunun için devletler kurmuşlardır. Bu devletlerden pek çoğunun namı bütün dünyaya yayılmıştır. Hz. Süleyman Aleyhisselam'ın ve Zülkarneyn'in kurmuş olduğu İslâm devletleri, bütün dünyayı hâkimiyetleri altına almıştı. Onların idareciliği zamanında İslâmiyet bütün dünyaya hâkim olmuştu. Dünyanın her yerinde Allahu Teâlânın hükümleri hâkimdi."
+    },
+    {
+      "id": "9",
+      "kitapAdi": "Nutuk",
+      "kitapYazari": "Mustafa Kemal Atatürk",
+      "kitapKategorisi": "Tarih",
+      "kitapSayfaSayisi": "643",
+      "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:5764972/wh:true/wi:220",
+      "kitapAciklamasi": "“…Efendiler, bu söylevimle, ulusal varlığı sona ermiş sayılan büyük bir ulusun, bağımsızlığını nasıl kazandığını; bilim ve tek niğin en son ilkelerine dayanan ulusal ve çağdaş bir devleti nasıl kurduğunu anlatmaya çalıştım. Bugün ulaştığımız sonuç, yüzyıllardan beri çekilen ulusal yıkımların yarattığı uyanıklığın ve bu sevgili yurdun her köşesini sulayan kanların karşılığıdır. Bu sonucu, Türk gençliğine, güvenle bırakıyorum.”"
     }
   ],
   "kategoriler": [
     {
       "kategoriId": "0",
-      "kategoriAdi": "Tüm Kitaplar"
+      "kategoriAdi": "Tüm Kitaplar",
+      "id": "6d58"
     },
     {
       "kategoriId": "1",
-      "kategoriAdi": "Yazılım"
+      "kategoriAdi": "Yazılım",
+      "id": "9445"
     },
     {
       "kategoriId": "2",
-      "kategoriAdi": "Tarih"
+      "kategoriAdi": "Tarih",
+      "id": "854c"
     },
     {
       "kategoriId": "3",
-      "kategoriAdi": "Roman"
+      "kategoriAdi": "Roman",
+      "id": "c444"
     },
     {
       "kategoriId": "4",
-      "kategoriAdi": "Finans"
+      "kategoriAdi": "Finans",
+      "id": "c363"
     },
     {
       "kategoriId": "5",
-      "kategoriAdi": "Diğer"
+      "kategoriAdi": "Diğer",
+      "id": "47f1"
     }
   ]
 }

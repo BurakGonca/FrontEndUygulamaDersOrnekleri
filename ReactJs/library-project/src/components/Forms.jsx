@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/style/forms.scss";
 
-const Forms = ({ kitapEkle, kitaplar }) => {
+const Forms = ({ kitapEkle, kitaplar, secilenKitap }) => {
   const [kitapAdi, setKitapAdi] = useState("");
   const [kitapYazari, setKitapYazari] = useState("");
   const [kitapKategorisi, setKitapKategorisi] = useState("Kategori Seçiniz");
@@ -27,11 +27,28 @@ const Forms = ({ kitapEkle, kitaplar }) => {
     setKitapResmi("");
     setKitapSayfaSayisi("");
     setKitapAciklamasi("");
+
+    
+
   };
+
+
+  useEffect(()=>{
+
+    if (secilenKitap) {
+      setKitapAdi(secilenKitap.kitapAdi);
+      setKitapYazari(secilenKitap.kitapYazari);
+      setKitapKategorisi(secilenKitap.kitapKategorisi);
+      setKitapResmi(secilenKitap.kitapResmi);
+      setKitapSayfaSayisi(secilenKitap.kitapSayfaSayisi);
+      setKitapAciklamasi(secilenKitap.kitapAciklamasi);
+    }
+
+  },[secilenKitap])
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Kitap Ekle</h3>
+      <h3>{secilenKitap?"Kitap Düzenle": "Kitap Ekle"}</h3>
       <input
         value={kitapAdi}
         onChange={(e) => setKitapAdi(e.target.value)}
@@ -81,7 +98,7 @@ const Forms = ({ kitapEkle, kitaplar }) => {
           kitapKategorisi === "Kategori Seçiniz"
         }
         type="submit"
-        value="Ekle"
+        value={secilenKitap?"Düzenle": "Ekle"}
       ></input>
     </form>
   );

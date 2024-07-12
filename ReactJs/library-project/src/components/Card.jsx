@@ -2,7 +2,7 @@ import React from "react";
 import "../assets/style/card.scss";
 import Book from "../assets/img/defaultBook.jpg";
 
-const Card = ({ kitap, kitapSil }) => {
+const Card = ({ kitap, kitapSil, cardDuzenle }) => {
   let kelimeDizisi = kitap.kitapAciklamasi.split(" ");
 
   return (
@@ -10,7 +10,7 @@ const Card = ({ kitap, kitapSil }) => {
       <button onClick={() => kitapSil(kitap.id)} className="delete">
         Sil
       </button>
-      <button className="edit">Düzenle</button>
+      <button onClick={() => cardDuzenle(kitap.id)} className="edit">Düzenle</button>
       <img
         src={kitap.kitapResmi ? kitap.kitapResmi : Book}
         alt={kitap.KitapAdi}
@@ -20,8 +20,6 @@ const Card = ({ kitap, kitapSil }) => {
         <p>Yazar: {kitap.kitapYazari}</p>
         <p>Kategori: {kitap.kitapKategorisi}</p>
         <p>Sayfa Sayısı: {kitap.kitapSayfaSayisi}</p>
-        {/* <p>Açıklaması:{kitap.kitapAciklamasi.substring(0,100) + "..."}</p> */}
-
         <p>
           Açıklaması:
           {kelimeDizisi[0] +
