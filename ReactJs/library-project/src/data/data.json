@@ -2,7 +2,7 @@
   "kitaplar": [
     {
       "id": "1",
-      "kitapAdi": "Körlük3",
+      "kitapAdi": "Körlük",
       "kitapYazari": "Jose Saramago",
       "kitapKategorisi": "Roman",
       "kitapSayfaSayisi": "350",
@@ -81,6 +81,34 @@
       "kitapSayfaSayisi": "643",
       "kitapResmi": "https://img.kitapyurdu.com/v1/getImage/fn:5764972/wh:true/wi:220",
       "kitapAciklamasi": "“…Efendiler, bu söylevimle, ulusal varlığı sona ermiş sayılan büyük bir ulusun, bağımsızlığını nasıl kazandığını; bilim ve tek niğin en son ilkelerine dayanan ulusal ve çağdaş bir devleti nasıl kurduğunu anlatmaya çalıştım. Bugün ulaştığımız sonuç, yüzyıllardan beri çekilen ulusal yıkımların yarattığı uyanıklığın ve bu sevgili yurdun her köşesini sulayan kanların karşılığıdır. Bu sonucu, Türk gençliğine, güvenle bırakıyorum.”"
+    },
+    {
+      "id": "10",
+      "kitapAdi": "yeni kitap",
+      "kitapYazari": "yeni kitap",
+      "kitapKategorisi": "Finans",
+      "kitapSayfaSayisi": "500",
+      "kitapResmi": "",
+      "kitapAciklamasi": "asdsad",
+      "isDeleted": true
+    },
+    {
+      "id": "11",
+      "kitapAdi": "Kitap Yeni",
+      "kitapYazari": "Burak Gonca",
+      "kitapKategorisi": "Diğer",
+      "kitapSayfaSayisi": "800",
+      "kitapResmi": "",
+      "kitapAciklamasi": "asda asdsa  das das  aa das da"
+    },
+    {
+      "id": "12",
+      "kitapAdi": "Körlük 2",
+      "kitapYazari": "sada sad as",
+      "kitapKategorisi": "Yazılım",
+      "kitapSayfaSayisi": "900",
+      "kitapResmi": "",
+      "kitapAciklamasi": "asda asdas da"
     }
   ],
   "kategoriler": [

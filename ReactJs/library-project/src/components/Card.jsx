@@ -1,16 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../assets/style/card.scss";
 import Book from "../assets/img/defaultBook.jpg";
+import DataContext from "../context/DataContext";
 
-const Card = ({ kitap, kitapSil, cardDuzenle }) => {
+import { FaTrash } from "react-icons/fa6";
+import { FaRegTrashAlt } from "react-icons/fa";
+
+import { FaEdit } from "react-icons/fa";
+
+const Card = ({ kitap }) => {
   let kelimeDizisi = kitap.kitapAciklamasi.split(" ");
-
+const {kitapSil, cardDuzenle, search} = useContext(DataContext);
   return (
+    (kitap.kitapAdi.toLowerCase().startsWith(search.toLowerCase())) &&
+
     <div className="card">
       <button onClick={() => kitapSil(kitap.id)} className="delete">
-        Sil
+      <FaRegTrashAlt size={40}/>
       </button>
-      <button onClick={() => cardDuzenle(kitap.id)} className="edit">Düzenle</button>
+      <button onClick={() => cardDuzenle(kitap.id)} className="edit">
+        <FaEdit size={40}/>
+      </button>
       <img
         src={kitap.kitapResmi ? kitap.kitapResmi : Book}
         alt={kitap.KitapAdi}

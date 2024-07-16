@@ -1,50 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import "../assets/style/forms.scss";
+import DataContext from "../context/DataContext";
 
-const Forms = ({ kitapEkle, kitaplar, secilenKitap }) => {
-  const [kitapAdi, setKitapAdi] = useState("");
-  const [kitapYazari, setKitapYazari] = useState("");
-  const [kitapKategorisi, setKitapKategorisi] = useState("Kategori Seçiniz");
-  const [kitapSayfaSayisi, setKitapSayfaSayisi] = useState("");
-  const [kitapResmi, setKitapResmi] = useState("");
-  const [kitapAciklamasi, setKitapAciklamasi] = useState("");
+const Forms = () => {
+  
+  const { secilenKitap,
+          kitapAdi,
+          kitapYazari,
+          kitapKategorisi,
+          kitapResmi,
+          kitapSayfaSayisi,
+          kitapAciklamasi,
+          setKitapAdi,
+          setKitapYazari,
+          setKitapKategorisi,
+          setKitapResmi,
+          setKitapSayfaSayisi,
+          setKitapAciklamasi,
+          handleSubmit
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    kitapEkle({
-      id: (Number(kitaplar[kitaplar.length - 1].id) + 1).toString(),
-      kitapAdi: kitapAdi,
-      kitapYazari: kitapYazari,
-      kitapKategorisi: kitapKategorisi,
-      kitapSayfaSayisi: kitapSayfaSayisi,
-      kitapResmi: kitapResmi,
-      kitapAciklamasi: kitapAciklamasi,
-    });
-    console.log(kitaplar);
-    setKitapAdi("");
-    setKitapYazari("");
-    setKitapKategorisi("Kategori Seçiniz");
-    setKitapResmi("");
-    setKitapSayfaSayisi("");
-    setKitapAciklamasi("");
-
-    
-
-  };
-
-
-  useEffect(()=>{
-
-    if (secilenKitap) {
-      setKitapAdi(secilenKitap.kitapAdi);
-      setKitapYazari(secilenKitap.kitapYazari);
-      setKitapKategorisi(secilenKitap.kitapKategorisi);
-      setKitapResmi(secilenKitap.kitapResmi);
-      setKitapSayfaSayisi(secilenKitap.kitapSayfaSayisi);
-      setKitapAciklamasi(secilenKitap.kitapAciklamasi);
-    }
-
-  },[secilenKitap])
+   } = useContext(DataContext);
 
   return (
     <form onSubmit={handleSubmit}>

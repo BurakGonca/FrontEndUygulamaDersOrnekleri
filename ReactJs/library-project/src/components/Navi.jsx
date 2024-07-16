@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Brand from '../assets/img/brand.png'
 import '../assets/style/navi.scss'
+import DataContext from '../context/DataContext'
 
-const Navi = ({navHead,kategoriler,setSecilenKategori}) => {
+const Navi = () => {
+  const {companyName,kategoriler,setSecilenKategori} = useContext(DataContext);
+
   return (
     
     <nav>
 
       <div className="brand">
         <img src={Brand} alt="" />
-        <h3>{navHead}</h3>
+        <h3>{companyName}</h3>
 
       </div>
       <ul className='liste' >
