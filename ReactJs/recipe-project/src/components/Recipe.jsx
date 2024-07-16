@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../assets/style/recipe.scss";
 import DefaultRecipeImage from "../assets/img/default-recipe.jpg";
+import DataContext from "../context/DataContext";
 
-const Recipe = ({ recipe, recipeSil }) => {
+const Recipe = ({ recipe  }) => {
+  const {recipeSil, recipeDuzenle, search} = useContext(DataContext);
   return (
+    (recipe.title.toLowerCase().startsWith(search.toLowerCase())) &&
     <div className="card">
       <div className="img">
         <img
@@ -14,18 +17,21 @@ const Recipe = ({ recipe, recipeSil }) => {
 
       <div className="card-body">
         <h4>{recipe.title}</h4>
-        <p>
+        {/* <p>
           {recipe.description.substring(
-            0,
-            recipe.description.substring(0, 100).lastIndexOf(" ")
-          ) + "..."}
+            (0, recipe.description).substring(0, 30).lastIndexOf(" ")) + "..."}
+        </p> */}
+        <p>
+          {recipe.description}
         </p>
 
         <div className="button-container">
           <button onClick={() => recipeSil(recipe.id)} className="delete">
-            Sil
+            Delete
           </button>
-          <button className="edit">Düzenle</button>
+          <button onClick={() => recipeDuzenle(recipe.id)} className="edit">
+            Edit
+          </button>
         </div>
       </div>
     </div>

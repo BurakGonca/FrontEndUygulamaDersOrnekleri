@@ -1,20 +1,22 @@
-import React from 'react'
-import Recipe from './Recipe'
+import React, { useContext } from "react";
+import Recipe from "./Recipe";
+import DataContext from "../context/DataContext";
+import SearchBar from "./SearchBar";
 
+const RecipeList = () => {
+  const { recipes } = useContext(DataContext);
 
-const RecipeList = ({recipes, recipeSil}) => {
   return (
-    <div className='card-list'>
-    
-    {
-      recipes.map(recipe=>
-          <Recipe recipe={recipe} recipeSil={recipeSil}  key={recipe.id}/>
+    <>
+    <SearchBar/>
+      <div className="card-list">
+        {recipes.map(
+          (recipe) =>
+            !recipe.isDeleted && <Recipe recipe={recipe} key={recipe.id} />
+        )}
+      </div>
+    </>
+  );
+};
 
-      )
-    }
-    
-    </div>
-  )
-}
-
-export default RecipeList
+export default RecipeList;

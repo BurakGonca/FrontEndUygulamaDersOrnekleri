@@ -1,26 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext } from "react";
 import "../assets/style/forms.scss";
+import DataContext from "../context/DataContext";
 
-const Forms = ({ recipeEkle, recipes }) => {
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [image, setImage] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    recipeEkle({
-      id: (Number(recipes[recipes.length - 1].id) + 1).toString(),
-      title: title,
-      description: description,
-      image: image,
-    });
-
-    setTitle("");
-    setDescription("");
-    setImage("");
-  };
-
+const Forms = () => {
+  
+  const { secilenRecipe,
+          title,
+          description,
+          image,
+          setTitle,
+          setDescription,
+          setImage,
+          handleSubmit
+   } = useContext(DataContext);
+   
   return (
     <form onSubmit={handleSubmit} className="recipe-form">
       <input
@@ -43,7 +36,7 @@ const Forms = ({ recipeEkle, recipes }) => {
       <input
         disabled={title === "" || description === ""}
         type="submit"
-        value="Add Recipe"
+        value={secilenRecipe? "Edit": "Add Recipe"}
       />
     </form>
   );
