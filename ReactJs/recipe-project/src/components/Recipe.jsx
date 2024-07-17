@@ -17,13 +17,10 @@ const Recipe = ({ recipe  }) => {
 
       <div className="card-body">
         <h4>{recipe.title}</h4>
-        {/* <p>
-          {recipe.description.substring(
-            (0, recipe.description).substring(0, 30).lastIndexOf(" ")) + "..."}
-        </p> */}
         <p>
-          {recipe.description}
+          {recipe.description.substring(0, recipe.description.substring(0, 30).lastIndexOf(" ")) + "..."}
         </p>
+        
 
         <div className="button-container">
           <button onClick={() => recipeSil(recipe.id)} className="delete">

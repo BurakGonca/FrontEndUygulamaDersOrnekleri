@@ -23,7 +23,7 @@ export const DataProvider = ({children})=>{
           return {...response2.data}
         }
         else{
-          return {...recipes}
+          return {...recipe}
         }
       }))
 
