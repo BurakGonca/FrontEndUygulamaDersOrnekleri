@@ -5,4 +5,14 @@ div{
         color: #322C2B;
         
     }
+    p{
+        text-align: center;
+        
+    }
+    .image{
+        width: 700px;
+        height: 100%;
+        border-radius: 30% 70% 70% 30% / 29% 37% 63% 71% ;
+        object-fit: cover;
+    }
 }

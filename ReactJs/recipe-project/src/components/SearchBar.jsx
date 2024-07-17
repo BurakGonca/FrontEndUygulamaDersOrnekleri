@@ -5,9 +5,9 @@ import { FcSearch } from "react-icons/fc";
 const SearchBar = () => {
     const {setSearch} = useContext(DataContext);
   return (
-    <div className='search'>
-        <input onChange={(e)=>setSearch(e.target.value)} type="text" placeholder='Ara..' />
-        <FcSearch size={40}/>
+    <div className='search-bar'>
+        <input onChange={(e)=>setSearch(e.target.value)} className='search-input' type='text' placeholder='Search Recipe...'/>
+      <FcSearch className="search-icon" size={20} />
     </div>
   )
 }

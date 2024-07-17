@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Spaghetti Carbonara",
-      "description": "A classic Italian pasta dish with a creamy egg sauce.",
+      "description": "A classic Italian pasta dish with a creamy egg sauce..",
       "image": "https://images.services.kitchenstories.io/6glN_4JhpVS9aUiBS7JnGsuDULA=/3840x0/filters:quality(80)/images.kitchenstories.io/wagtailOriginalImages/R2568-photo-final-_0.jpg"
     },
     {
@@ -116,6 +116,24 @@
       "id": "19",
       "title": "Burak GOnca yeni",
       "description": "asdsad as dsa das d sad sad adadsadsad sadasdsaddddddasd asdsadsadas dsadasdasdasda sadasdasdasdsadsadasd  ddddddddddddddd asdaas das das d",
+      "image": ""
+    },
+    {
+      "id": "20",
+      "title": "sadadad",
+      "description": "asdadasdasda",
+      "image": ""
+    },
+    {
+      "id": "21",
+      "title": "Burak18",
+      "description": "asdadasda asdsad",
+      "image": ""
+    },
+    {
+      "id": "22",
+      "title": "assad",
+      "description": "sdasaadasdasdsa",
       "image": ""
     }
   ]

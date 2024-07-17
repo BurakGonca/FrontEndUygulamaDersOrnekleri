@@ -1,86 +1,86 @@
-.recipe-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  margin-bottom: 20px;
-
-  input,
-  textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 16px;
-      box-sizing: border-box;
-      outline: none;
+.form-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+   
+   
+    h2 {
+      text-decoration: underline;
+      margin-top: 0px;
+      margin-bottom: 10px auto;
+    }
   }
-
-  input {
-      height: 30px;
+   
+  .form-group {
+    margin-bottom: 15px;
   }
-
-  textarea {
-      height: 100px;
-      resize: none;
+   
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
   }
-
-  input[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 4px;
-      background-color: #E4C59E;
-      color: #322C2B;
-      font-size: 16px;
-      cursor: pointer;
-
-      &:hover {
-          background-color: #AF8260;
-      }
-
-      &:disabled {
-          background-color: #ddd;
-          cursor: not-allowed;
-      }
+   
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
   }
-
-  @media (max-width: 1024px) {
-      width: 80%;
+   
+  .form-group textarea {
+    resize: vertical;
   }
+   
+   
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #AF8260;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+  }
+   
+  .form-button:hover {
+    background-color: #AF8260;
+  }
+   
+ 
+  .form-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+   
 
-  @media (max-width: 768px) {
-      width: 100%;
+  @media (max-width: 600px) {
+    .form-container {
       padding: 15px;
-
-      input,
-      textarea {
-          font-size: 14px;
-      }
-
-      input[type="submit"] {
-          font-size: 14px;
-          padding: 8px;
-      }
+    }
+   
+    .form-group input,
+    .form-group textarea {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+   
+    .form-button {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
   }
-
-  @media (max-width: 480px) {
-      padding: 10px;
-
-      input,
-      textarea {
-          font-size: 12px;
-      }
-
-      input[type="submit"] {
-          font-size: 12px;
-          padding: 6px;
-      }
+   
+  input:focus,
+  textarea:focus {
+    outline: 2px solid #AF8260;
   }
-}
