@@ -30,6 +30,9 @@ const Recipe = ({ recipe  }) => {
           <Link to="/recipe-platform/forms"> <button onClick={() => recipeDuzenle(recipe.id)} className="edit">
             Edit
           </button></Link>
+          <Link to={recipe.id} key={recipe.id}> <button className="detail">
+            Detail
+          </button></Link>
          
         </div>
       </div>

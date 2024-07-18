@@ -1,0 +1,15 @@
+.contact{
+    color:#322C2B;
+   object-fit: cover;
+   margin: 30px;
+   
+   .map{
+    object-fit: cover;
+
+        -webkit-box-shadow: 8px 4px 20px 10px rgba(175, 130, 96, 1);
+        -moz-box-shadow: 8px 4px 20px 10px rgba(175, 130, 96, 1);
+        box-shadow: 8px 4px 20px 10px rgba(175, 130, 96, 1);
+       margin-top: 20px;
+       margin-bottom: 20px;
+   }
+}
