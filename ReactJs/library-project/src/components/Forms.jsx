@@ -4,41 +4,29 @@ import DataContext from "../context/DataContext";
 
 const Forms = () => {
   
-  const { secilenKitap,
-          kitapAdi,
-          kitapYazari,
-          kitapKategorisi,
-          kitapResmi,
-          kitapSayfaSayisi,
-          kitapAciklamasi,
-          setKitapAdi,
-          setKitapYazari,
-          setKitapKategorisi,
-          setKitapResmi,
-          setKitapSayfaSayisi,
-          setKitapAciklamasi,
-          handleSubmit
-
-   } = useContext(DataContext);
+  const {state,dispatch,handleSubmit} = useContext(DataContext);
+  const {secilenKitap,kitapAdi,kitapYazari,kitapKategorisi,kitapSayfaSayisi,kitapResmi,kitapAciklamasi} = state;
 
   return (
+    //case6-11
+
     <form onSubmit={handleSubmit}>
       <h3>{secilenKitap?"Kitap Düzenle": "Kitap Ekle"}</h3>
       <input
         value={kitapAdi}
-        onChange={(e) => setKitapAdi(e.target.value)}
+        onChange={(e) => dispatch({type:"kitapAdi",payload:e.target.value})}
         type="text"
         placeholder="Kitap Adı"
       ></input>
       <input
         value={kitapYazari}
-        onChange={(e) => setKitapYazari(e.target.value)}
+        onChange={(e) => dispatch({type:"kitapYazari",payload:e.target.value})}
         type="text"
         placeholder="Kitap Yazarı"
       ></input>
       <select
         value={kitapKategorisi}
-        onChange={(e) => setKitapKategorisi(e.target.value)}
+        onChange={(e) => dispatch({type:"kitapKategorisi",payload:e.target.value})}
       >
         <option>Kategori Seçiniz</option>
         <option>Yazılım</option>
@@ -49,19 +37,19 @@ const Forms = () => {
       </select>
       <input
         value={kitapSayfaSayisi}
-        onChange={(e) => setKitapSayfaSayisi(e.target.value)}
+        onChange={(e) => dispatch({type:"kitapSayfaSayisi",payload:e.target.value})}
         type="number"
         placeholder="Sayfa Sayısı"
       ></input>
       <input
         value={kitapResmi}
-        onChange={(e) => setKitapResmi(e.target.value)}
+        onChange={(e) => dispatch({type:"kitapResmi",payload:e.target.value})}
         type="url"
         placeholder="Kitap resmi(url)"
       ></input>
       <textarea
         value={kitapAciklamasi}
-        onChange={(e) => setKitapAciklamasi(e.target.value)}
+        onChange={(e) => dispatch({type:"kitapAciklamasi",payload:e.target.value})}
         placeholder="Kitap Açıklaması"
       ></textarea>
       <input

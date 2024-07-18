@@ -103,12 +103,22 @@
     },
     {
       "id": "12",
-      "kitapAdi": "Körlük 2",
+      "kitapAdi": "Körlük 5",
       "kitapYazari": "sada sad as",
       "kitapKategorisi": "Yazılım",
       "kitapSayfaSayisi": "900",
       "kitapResmi": "",
       "kitapAciklamasi": "asda asdas da"
+    },
+    {
+      "id": "13",
+      "kitapAdi": "burak gonca",
+      "kitapYazari": "gonca",
+      "kitapKategorisi": "Diğer",
+      "kitapSayfaSayisi": "600",
+      "kitapResmi": "",
+      "kitapAciklamasi": "asdsad",
+      "isDeleted": true
     }
   ],
   "kategoriler": [

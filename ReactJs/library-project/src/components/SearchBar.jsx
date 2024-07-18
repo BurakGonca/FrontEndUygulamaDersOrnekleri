@@ -6,11 +6,12 @@ import { FcSearch } from "react-icons/fc";
 
 const SearchBar = () => {
 
-    const {secilenKategori,setSearch}=useContext(DataContext)
+    const {companyName,state,dispatch}=useContext(DataContext)
   return (
+    //case_5
     <div className='search'>
-        <h3 style={{marginLeft:"25px"}}>{secilenKategori} </h3>
-        <input onChange={(e)=>setSearch(e.target.value)} type='text' placeholder='Ara..'/> <FcSearch size={40} />
+        <h3 style={{marginLeft:"25px"}}>{state.secilenKategori} </h3>
+        <input onChange={(e)=>dispatch({type:"search",payload:e.target.value})} type='text' placeholder='Ara..'/> <FcSearch size={40} />
     </div>
   )
 }

@@ -5,16 +5,19 @@ import SearchBar from "./SearchBar";
 
 const CardList = () => {
 
-  const { kitaplar,secilenKategori} = useContext(DataContext);
+  const {state} = useContext(DataContext);
   
   return (
     <>
     <SearchBar/>
-      <div className="card-list">
-        {kitaplar.map((kitap) => (
-          !kitap.isDeleted &&
-          <Card kitap={kitap}  key={kitap.id} />
-        ))}
+    <div className='card-list'>
+        {
+          state.kitaplar.map(kitap=>
+              (kitap.kitapKategorisi === state.secilenKategori || state.secilenKategori === "Tüm Kitaplar") &&
+              (!kitap.isDeleted &&
+              <Card kitap={kitap} key={kitap.id}/>)
+            )
+        }
       </div>
     </>
   );

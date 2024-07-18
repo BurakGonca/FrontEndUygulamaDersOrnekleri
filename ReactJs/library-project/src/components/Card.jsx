@@ -3,16 +3,16 @@ import "../assets/style/card.scss";
 import Book from "../assets/img/defaultBook.jpg";
 import DataContext from "../context/DataContext";
 
-import { FaTrash } from "react-icons/fa6";
+// import { FaTrash } from "react-icons/fa6";
 import { FaRegTrashAlt } from "react-icons/fa";
 
 import { FaEdit } from "react-icons/fa";
 
 const Card = ({ kitap }) => {
   let kelimeDizisi = kitap.kitapAciklamasi.split(" ");
-const {kitapSil, cardDuzenle, search} = useContext(DataContext);
+const {kitapSil, cardDuzenle,state} = useContext(DataContext);
   return (
-    (kitap.kitapAdi.toLowerCase().startsWith(search.toLowerCase())) &&
+    (kitap.kitapAdi.toLowerCase().startsWith(state.search.toLowerCase())) &&
 
     <div className="card">
       <button onClick={() => kitapSil(kitap.id)} className="delete">
