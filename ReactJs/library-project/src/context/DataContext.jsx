@@ -1,6 +1,7 @@
 import axios from "axios";
 import { createContext, useEffect, useReducer } from "react";
 import { initialState, reducer } from "../reducer/reducer";
+import { Bounce, toast } from "react-toastify";
 
 //context oluşturulması
 const DataContext = createContext();
@@ -42,6 +43,18 @@ export const DataProvider = ({ children }) => {
   const kitapSil = async (id) => {
     //ön yüzde silme işlemi
     dispatch({type:"kitapSil",id})
+
+    toast.warn('Kitap başarıyla silindi!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+      });
    
 
     //arka yüzde silme işlemi

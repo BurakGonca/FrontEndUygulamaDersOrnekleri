@@ -15,3 +15,7 @@ html,body{
 select option{
     font-family: monospace;
 }
+a{
+    color: white;
+    text-decoration: none;
+}

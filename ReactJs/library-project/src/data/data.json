@@ -108,7 +108,8 @@
       "kitapKategorisi": "Yazılım",
       "kitapSayfaSayisi": "900",
       "kitapResmi": "",
-      "kitapAciklamasi": "asda asdas da"
+      "kitapAciklamasi": "asda asdas da",
+      "isDeleted": true
     },
     {
       "id": "13",
