@@ -84,7 +84,8 @@
       "id": "14",
       "title": "Burak5",
       "description": "yeni yeni sadas asds ad as",
-      "image": "https://recipes.net/wp-content/uploads/2023/05/mimis-cafes-chicken-caesar-salad-recipe_9419222422c1859ac90db48175cf0b4e-300x300.jpeg"
+      "image": "https://recipes.net/wp-content/uploads/2023/05/mimis-cafes-chicken-caesar-salad-recipe_9419222422c1859ac90db48175cf0b4e-300x300.jpeg",
+      "isDeleted": true
     },
     {
       "id": "15",
@@ -104,43 +105,120 @@
       "id": "17",
       "title": "asda s",
       "description": "adssada",
-      "image": ""
+      "image": "",
+      "isDeleted": true
     },
     {
       "id": "18",
       "title": "burak asdsad",
       "description": "sadadsad asd sad as das das dsa das das das da das",
-      "image": ""
+      "image": "",
+      "isDeleted": true
     },
     {
       "id": "19",
       "title": "Burak GOnca yeni",
       "description": "asdsad as dsa das d sad sad adadsadsad sadasdsaddddddasd asdsadsadas dsadasdasdasda sadasdasdasdsadsadasd  ddddddddddddddd asdaas das das d",
-      "image": ""
+      "image": "",
+      "isDeleted": true
     },
     {
       "id": "20",
       "title": "sadadad",
       "description": "asdadasdasda",
-      "image": ""
+      "image": "",
+      "isDeleted": true
     },
     {
       "id": "21",
       "title": "Burak18",
       "description": "asdadasda asdsad",
-      "image": ""
+      "image": "",
+      "isDeleted": true
     },
     {
       "id": "22",
       "title": "assad",
       "description": "sdasaadasdasdsa",
-      "image": ""
+      "image": "",
+      "isDeleted": true
     },
     {
       "id": "23",
       "title": "Yeni Tarif",
       "description": "asdşlkasd asdkasşdasdşada asdasdasd adsşsakdşaskd aşsdsaşdşsa",
-      "image": ""
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "24",
+      "title": "sdfsfs",
+      "description": "sdfsfds",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "25",
+      "title": "burraaak",
+      "description": "asdad asdsad sad sa aaaaaaa",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "26",
+      "title": "asdasda",
+      "description": "asdasdasd",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "27",
+      "title": "burraaak5",
+      "description": "asdsadasdas",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "28",
+      "title": "qwq",
+      "description": "asdada",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "29",
+      "title": "qwq",
+      "description": "sadasda",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "30",
+      "title": "fasdfadas d",
+      "description": "asdsadasdas",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "31",
+      "title": "asdsad",
+      "description": "asdada",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "32",
+      "title": "asdadas",
+      "description": "dadadas",
+      "image": "",
+      "isDeleted": true
+    },
+    {
+      "id": "33",
+      "title": "asdada",
+      "description": "asdsadas",
+      "image": "",
+      "isDeleted": true
     }
   ]
 }

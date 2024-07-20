@@ -2,8 +2,15 @@
 .header-container {
     // background-color: #322c2b;
     
-    background: rgb(98,98,98);
-    background: radial-gradient(circle, rgba(98,98,98,1) 0%, rgba(0,0,0,1) 82%);
+    // background: rgb(98,98,98);
+    // background: radial-gradient(circle, rgba(98,98,98,1) 0%, rgba(0,0,0,1) 82%);
+
+    background: url("../img/header-background4.jpg") ;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
 
     color: white;
     display: flex;

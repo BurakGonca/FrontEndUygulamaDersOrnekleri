@@ -10,27 +10,30 @@ import Contact from "./components/Contact";
 import { ToastContainer } from "react-toastify";
 import { AuthProvider } from "./context/AuthContext";
 import LoginPage from "./components/LoginPage";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
+import PrivateRoute from "./services/PrivateRoute";
 
 function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-      <ToastContainer/>
+        <ToastContainer />
         <Routes>
           <Route path="/*" element={<Loading />} />
           <Route path="recipe-platform" element={<Header />}>
+            <Route path="main" element={<Main />} />
+            <Route
+              path="/recipe-platform/forms"
+              element={<PrivateRoute element={<Forms />} />}
+            />
 
-            <Route path="main" element={<Main/>} />
-            <Route path="forms" element={<Forms/>} />
-            <Route path="recipelist" element={<RecipeList/>} />
-            <Route path="recipelist/:recipeId" element={<RecipeDetail/>} />
-            <Route path="about" element={<About/>} />
-            <Route path="contact" element={<Contact/>} />
-            <Route path="login" element={<LoginPage/>}/>
+            <Route path="recipelist" element={<RecipeList />} />
+            <Route path="recipelist/:recipeId" element={<RecipeDetail />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="login" element={<LoginPage />} />
           </Route>
         </Routes>
-        
       </BrowserRouter>
     </AuthProvider>
   );

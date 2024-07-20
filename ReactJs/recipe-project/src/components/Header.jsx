@@ -52,9 +52,13 @@ const Header = () => {
           <li>
             <NavLink to="main">Home</NavLink>
           </li>
-          <li>
-            <NavLink to="forms">Add Recipe</NavLink>
-          </li>
+          {currentUser && isAuthenticated && (
+            <li>
+              <NavLink className="navLink" to="forms">
+                Add Recipe
+              </NavLink>
+            </li>
+          )}
           <li>
             <NavLink to="recipelist">All Recipes</NavLink>
           </li>
