@@ -5,10 +5,10 @@ import Image from "../assets/img/image2.jpg";
 
 const Main = () => {
   return (
-    <div>
+    <div className='main-container'>
 
    
-      <img className='image' src={Image} alt="image" />
+      <img className='main-image' src={Image} alt="image" />
       
     </div>
   )

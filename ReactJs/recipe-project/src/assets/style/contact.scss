@@ -1,15 +1,16 @@
 .contact{
-    color:#322C2B;
+    color:white;
    object-fit: cover;
-   margin: 30px;
+   margin: 40px;
+  text-align: center;
    
    .map{
     object-fit: cover;
-
+   
         -webkit-box-shadow: 8px 4px 20px 10px rgba(175, 130, 96, 1);
         -moz-box-shadow: 8px 4px 20px 10px rgba(175, 130, 96, 1);
         box-shadow: 8px 4px 20px 10px rgba(175, 130, 96, 1);
-       margin-top: 20px;
+       margin-top: 10px;
        margin-bottom: 20px;
    }
 }

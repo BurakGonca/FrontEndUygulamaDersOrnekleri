@@ -1,7 +1,9 @@
 .about{
-   color:#322C2B;
+   color:white;
    object-fit: cover;
-   margin: 80px;
+   margin: 40px;
+   text-align: center;
+
    ul{
     text-align:center;
     list-style:none;
@@ -9,11 +11,12 @@
    img{
     height: 100%;
     width: 80px;
+    
    }
    .foto-class{
    justify-content: center;
    display: flex;
-  
+   margin: 60px;
    gap: 10px;
    }
 }

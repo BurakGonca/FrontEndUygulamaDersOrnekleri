@@ -7,13 +7,16 @@ import Loading from "./components/Loading";
 import RecipeDetail from "./components/RecipeDetail";
 import About from "./components/About";
 import Contact from "./components/Contact";
-
+import { ToastContainer } from "react-toastify";
+import { AuthProvider } from "./context/AuthContext";
+import LoginPage from "./components/LoginPage";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <BrowserRouter>
-        
+      <ToastContainer/>
         <Routes>
           <Route path="/*" element={<Loading />} />
           <Route path="recipe-platform" element={<Header />}>
@@ -24,12 +27,12 @@ function App() {
             <Route path="recipelist/:recipeId" element={<RecipeDetail/>} />
             <Route path="about" element={<About/>} />
             <Route path="contact" element={<Contact/>} />
-
+            <Route path="login" element={<LoginPage/>}/>
           </Route>
         </Routes>
         
       </BrowserRouter>
-    </>
+    </AuthProvider>
   );
 }
 

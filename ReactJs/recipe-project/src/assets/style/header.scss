@@ -1,47 +1,78 @@
-nav{
-    background-color:#322C2B;
+
+.header-container {
+    // background-color: #322c2b;
+    
+    background: rgb(98,98,98);
+    background: radial-gradient(circle, rgba(98,98,98,1) 0%, rgba(0,0,0,1) 82%);
+
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 15px 25px;
-   
-    
-    .brand{
-        font-size: 20px;
+  
+    .brand {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      cursor: default;
+  
+      img {
+        width: 60px;
+      }
+    }
+  
+    .liste {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      li {
+        .active {
+          color: #af8260;
+        }
+  
+        transition: 0.2s;
+        cursor: pointer;
+  
+        &:hover {
+          color: white;
+          transform: scale(1.2);
+        }
+  
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+  
+      .user-info {
         display: flex;
         align-items: center;
-        gap: 20px;
-        cursor: default;
-        img{
-            width: 60px;
-            
+        gap: 10px;
+  
+        .user-avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
         }
-    }
-    .liste{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap:20px;
-        li{
-            .active{
-                color: #AF8260;
-            }
-            transition: .2s;
-            cursor: pointer;
-            &:hover{
-                color: white;
-                
-                transform: scale(1.2);
-            }
-            a{
-                text-decoration: none;
-                color: white;
-            }
+  
+        .user-details {
+          display: flex;
+          flex-direction: column;
+  
+          .user-email {
+            font-size: 12px;
+            font-weight: bold;
+          }
+  
+          .user-role {
+            font-size: 10px;
+            color: #af8260;
+          }
         }
+      }
     }
-
-
-
-}
-
-
+  }
+  
