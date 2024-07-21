@@ -20,13 +20,20 @@
     .brand {
       font-size: 20px;
       display: flex;
+      justify-content: center;
       align-items: center;
-      gap: 20px;
+      gap: 10px;
       cursor: default;
-  
+      
       img {
-        width: 60px;
+        width: 70px;
+        height: fit-content;
       }
+      h3{
+        color: white;
+        
+      }
+      
     }
   
     .liste {

@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import "../assets/style/header.scss";
-import Logo from "../assets/img/logo.png";
+import Logo from "../assets/img/logo2.png";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { FaUserLock } from "react-icons/fa";
 import { FaUserCheck } from "react-icons/fa";
@@ -46,8 +46,9 @@ const Header = () => {
       <nav className="header-container">
         <div className="brand">
           <img src={Logo} alt="" />
-          <h3>Recipe Platform</h3>
+          <h3>Just Recipe</h3>
         </div>
+
         <ul className="liste">
           <li>
             <NavLink to="main">Home</NavLink>

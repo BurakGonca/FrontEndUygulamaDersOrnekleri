@@ -2,16 +2,18 @@ import React, { useContext, useState } from "react";
 import AuthContext from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { Bounce, toast } from "react-toastify";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai"; 
 import "../assets/style/loginpage.scss";
 
 const LoginPage = () => {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false); 
   const { login } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogin = async (e) => {
-    e.preventDefault(); //otomatik refreshi önlesin diye yazdım.
+    e.preventDefault();
     try {
       await login(user, password);
       toast.success("Login success!", {
@@ -54,12 +56,21 @@ const LoginPage = () => {
           type="text"
           placeholder="Username"
         />
-        <input
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          type="password"
-          placeholder="Password"
-        />
+        <div className="password-container">
+          <input
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            type={showPassword ? "text" : "password"} 
+            placeholder="Password"
+          />
+          <button
+            type="button"
+            className="password-toggle"
+            onClick={() => setShowPassword(!showPassword)}
+          >
+            {showPassword ? <AiFillEyeInvisible /> : <AiFillEye />}
+          </button>
+        </div>
         <input type="submit" value={"Login"} />
         <Link to="/recipe-platform/recipelist">Continue as Guest</Link>
       </form>

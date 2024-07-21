@@ -60,6 +60,36 @@
           text-decoration: underline;
         }
       }
+
+
+     
+
+      .password-container {
+        position: relative;
+      
+        input[type="password"], 
+        input[type="text"] {
+          width: 100%; 
+          padding-right: 40px; 
+        }
+      
+        .password-toggle {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          font-size: 18px;
+      
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      
+
     }
   }
   

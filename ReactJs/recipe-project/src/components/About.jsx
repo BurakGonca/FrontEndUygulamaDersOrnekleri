@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/style/about.scss";
-import Foto from '../assets/img/logo.png'
+import Foto from '../assets/img/logo2.png'
 
 const About = () => {
   return (
@@ -44,7 +44,7 @@ const About = () => {
       </ul>
       <div className="foto-class">
         <img src={Foto} alt="" />
-        <h2>Recipe Sharing Platform</h2>
+        
       </div>
     </div>
   );
